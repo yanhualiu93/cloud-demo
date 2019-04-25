@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    include: common,eureka,db,redis,rabbitmq
+  application:
+    name: oauth2
+logging:
+  level:
+    org.springframework.security: DEBUG
+    #org.springframework.boot: DEBUG
+ribbon:
+  eureka:
+    enabled: true
+password-encoder-type:  "{bcrypt}"
+
